@@ -35,10 +35,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
-      {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50/30 via-transparent to-indigo-50/30 dark:from-purple-950/20 dark:via-transparent dark:to-indigo-950/20"></div>
 
-      {/* Navigation */}
       <nav className="relative z-10 p-6">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -51,7 +49,6 @@ function App() {
               Voltune
             </span>
           </div>
-
           <div className="flex items-center gap-2">
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
@@ -64,7 +61,6 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
@@ -84,7 +80,6 @@ function App() {
             </p>
           </div>
 
-          {/* Social Links */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
               href="https://discord.gg/k35P8yvTnE"
@@ -109,7 +104,7 @@ function App() {
             </a>
 
             <a
-              href="https://youtube.com/@VoltuneBot"
+              href="https://www.youtube.com/@voltunecordbot"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl text-gray-700 dark:text-gray-300 font-medium transition-all duration-200 hover:bg-white dark:hover:bg-gray-800 hover:scale-105 border border-gray-200/50 dark:border-gray-700/50"
@@ -120,7 +115,6 @@ function App() {
             </a>
           </div>
 
-          {/* Prominent Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             <button
               onClick={() => setShowInfoModal(true)}
@@ -144,7 +138,6 @@ function App() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="relative z-10 py-8 text-center border-t border-gray-200/50 dark:border-gray-800/50">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-gray-500 dark:text-gray-400 text-sm">
@@ -153,17 +146,15 @@ function App() {
         </div>
       </footer>
 
-      {/* Info Modal */}
       {showInfoModal && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
           onClick={() => setShowInfoModal(false)}
         >
           <div
-            className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-800 modal-enter"
+            className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-800"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Modal Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                 About Voltune
@@ -176,7 +167,6 @@ function App() {
               </button>
             </div>
 
-            {/* Modal Content */}
             <div className="p-6 space-y-6">
               <div className="text-center">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
@@ -252,6 +242,10 @@ function App() {
                     <span className="text-gray-900 dark:text-white font-medium">Taco</span>
                   </div>
                   <div className="flex justify-between py-1">
+                    <span className="text-gray-500 dark:text-gray-400">Manager:</span>
+                    <span className="text-gray-900 dark:text-white font-medium">Ghostly</span>
+                  </div>
+                  <div className="flex justify-between py-1">
                     <span className="text-gray-500 dark:text-gray-400">Developer:</span>
                     <span className="text-gray-900 dark:text-white font-medium">saoydev</span>
                   </div>
@@ -262,10 +256,6 @@ function App() {
                   <div className="flex justify-between py-1">
                     <span className="text-gray-500 dark:text-gray-400">Designer:</span>
                     <span className="text-gray-900 dark:text-white font-medium">Kydesh & saoydev</span>
-                  </div>
-                  <div className="flex justify-between py-1">
-                    <span className="text-gray-500 dark:text-gray-400">Server Admin:</span>
-                    <span className="text-gray-900 dark:text-white font-medium">david1c1</span>
                   </div>
                 </div>
               </div>
