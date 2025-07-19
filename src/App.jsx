@@ -242,13 +242,7 @@ function App() {
                     <span className="text-gray-900 dark:text-white font-medium">Taco</span>
                   </div>
                   <div className="flex justify-between py-1">
-                    <span className="text-gray-500 dark:text-gray-400">Manager:</span>
-                    <span className="text-gray-900 dark:text-white font-medium">Ghostly</span>
-                  </div>
-                  <div className="flex justify-between py-1">
-                    <span className="text-gray-500 dark:text-gray-400">Developer:</span>
-                    <span className="text-gray-900 dark:text-white font-medium">saoydev</span>
-                  </div>
+                   
                   <div className="flex justify-between py-1">
                     <span className="text-gray-500 dark:text-gray-400">Animator:</span>
                     <span className="text-gray-900 dark:text-white font-medium">figuate</span>
